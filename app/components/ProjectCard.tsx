@@ -106,9 +106,9 @@ export function ProjectCard({ project }: { project: Project }) {
               <a
                 key={link.href}
                 href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: "#FDF2F2",
                   color: "#8C1515",
