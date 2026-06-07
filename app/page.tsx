@@ -144,14 +144,6 @@ const projects: Project[] = [
 const totalStudents = projects.reduce((n, p) => n + p.members.length, 0);
 const liveDemos = projects.filter(p => p.links.some(l => l.type === "site")).length;
 
-/* Stanford Block-S SVG — decorative hero motif */
-function BlockS({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 160 200" className={className} fill="currentColor" aria-hidden>
-      <path d="M140 40 C140 18 124 4 100 4 L60 4 C36 4 20 18 20 40 C20 58 30 70 50 78 L110 102 C130 110 140 122 140 142 C140 164 124 176 100 176 L60 176 C36 176 20 162 20 142 L20 130 L44 130 L44 142 C44 150 50 156 60 156 L100 156 C110 156 116 150 116 142 C116 134 110 128 98 122 L38 98 C18 90 4 76 4 54 C4 24 24 4 58 4 L102 4 C136 4 156 22 156 52 L156 60 L140 60 Z" />
-    </svg>
-  );
-}
 
 export default function Page() {
   return (
@@ -175,7 +167,7 @@ export default function Page() {
       <header style={{ backgroundColor: "#8C1515" }} className="text-white px-6 pt-12 pb-16 relative overflow-hidden">
 
         {/* Decorative Block S */}
-        <BlockS className="absolute right-[-20px] top-[-20px] w-72 md:w-96 text-white opacity-[0.04] pointer-events-none select-none" />
+        <img src="/block-s.png" alt="" aria-hidden className="absolute right-[-20px] top-[-20px] w-72 md:w-96 opacity-[0.07] pointer-events-none select-none" />
 
         {/* Diagonal accent lines */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden>
@@ -201,17 +193,18 @@ export default function Page() {
           <p className="text-white/65 leading-relaxed max-w-2xl mb-4 text-sm">
             Thirty Stanford undergraduates — enrolled in a GSB course for the first time through
             Pathfinder, Stanford&apos;s program bridging the business school and undergraduate life —
-            spent a quarter doing something that had never been done before: they built AI agents
-            calibrated to their own political views, deployed them in live prediction markets,
-            sent them into a multi-party legislature to debate real policy, and watched what happened
-            when machines tried to govern together.
+            spent a quarter inside the systems they were studying. Funded in part by an AIMES grant,
+            BUSGEN 116 is built around a sequence of weekly &ldquo;build-and-deploy&rdquo; exercises:
+            every assignment is live, evaluated against real-world outcomes, and consequential.
+            Students don&apos;t read about AI governance — they run it.
           </p>
           <p className="text-white/65 leading-relaxed max-w-2xl mb-10 text-sm">
-            Every student received a Claude Code subscription and a funded API key. Every assignment
-            was live, competitive, and consequential. By week four, agents were casting proxy votes
-            on real proposals. By week five, they were dealmaking across party lines in a simulated
-            legislature. By week six, they were advising a war cabinet. The projects below are what
-            they built when they took those tools and ran with them.
+            Every student received fully provisioned access to OpenRouter API credits and Claude Code.
+            By week three, they had deployed geopolitical forecasting agents scored against real
+            outcomes. By week four, they had aligned proxy voters to their own political preferences
+            and sent them into a live evaluation. By week five, those agents were negotiating
+            coalitions in a shared agentic legislature. By week six, they were advising a war cabinet.
+            The projects below are what they built when the quarter ended and they ran with the tools.
           </p>
 
           {/* Stats */}
@@ -255,7 +248,7 @@ export default function Page() {
           <div>
             <h2 className="font-serif text-2xl font-bold text-stone-900">What they built</h2>
             <p className="text-stone-500 text-sm mt-1">
-              Taught by Professor Andy Hall &nbsp;·&nbsp; Technical Coordinator: Piper Fleming
+              Taught by Professor Andy Hall &nbsp;·&nbsp; Tech TA &amp; site: Piper Fleming &nbsp;·&nbsp; TA: Madeleine Mayhew
             </p>
           </div>
           {/* Small cardinal accent rule */}
