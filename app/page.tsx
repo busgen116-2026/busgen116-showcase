@@ -167,7 +167,7 @@ export default function Page() {
       <header style={{ backgroundColor: "#8C1515" }} className="text-white px-6 pt-12 pb-16 relative overflow-hidden">
 
         {/* Decorative Block S */}
-        <img src="/block-s.png" alt="" aria-hidden className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-72 md:w-96 opacity-[0.07] pointer-events-none select-none" />
+        <img src="/block-s.png" alt="" aria-hidden className="absolute right-8 top-1/2 -translate-y-1/2 w-72 md:w-96 opacity-[0.07] pointer-events-none select-none" />
 
         {/* Diagonal accent lines */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden>
