@@ -185,14 +185,8 @@ export default function Page() {
 
         <div className="max-w-6xl mx-auto relative">
           {/* Stanford wordmark row */}
-          <div className="flex items-center gap-3 mb-6">
-            <div className="flex items-center justify-center w-8 h-8 rounded font-serif font-black text-lg leading-none" style={{ backgroundColor: "rgba(255,255,255,0.15)" }}>
-              S
-            </div>
-            <div className="h-4 w-px bg-white/20" />
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-white/50">
-              Stanford Graduate School of Business
-            </span>
+          <div className="mb-8">
+            <img src="/stanford-logo.png" alt="Stanford University" className="h-10 w-auto" />
           </div>
 
           <p className="text-xs font-semibold tracking-[0.25em] uppercase text-white/40 mb-3">
@@ -280,9 +274,7 @@ export default function Page() {
       <footer className="border-t border-stone-200 px-6 py-8 mt-4 bg-white">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-6 h-6 rounded font-serif font-black text-sm leading-none text-white" style={{ backgroundColor: "#8C1515" }}>
-              S
-            </div>
+            <img src="/stanford-logo.png" alt="Stanford University" className="h-6 w-auto" />
             <span className="text-xs text-stone-400">
               BUSGEN 116: FREE SYSTEMS &nbsp;·&nbsp; Stanford Pathfinder &nbsp;·&nbsp; Spring 2026
             </span>
