@@ -175,14 +175,14 @@ export default function Page() {
         </div>
 
         <div className="max-w-6xl mx-auto relative">
-          {/* Stanford wordmark row */}
-          <div className="mb-8">
+          {/* Stanford wordmark + label row */}
+          <div className="flex items-center gap-4 mb-6">
             <img src="/stanford-logo.png" alt="Stanford University" className="h-10 w-auto" />
+            <p className="text-xs font-semibold tracking-[0.25em] uppercase text-white/40">
+              BUSGEN 116 &nbsp;·&nbsp; Student Final Projects
+            </p>
           </div>
 
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-white/40 mb-3">
-            Student Final Projects
-          </p>
           <h1 className="font-serif text-6xl md:text-7xl font-bold leading-none mb-4 tracking-tight">
             FREE SYSTEMS
           </h1>
@@ -191,14 +191,13 @@ export default function Page() {
           </p>
 
           <p className="text-white/65 leading-relaxed max-w-2xl mb-4 text-sm">
-            Thirty Stanford undergraduates — enrolled in a GSB course for the first time through
-            Pathfinder, Stanford&apos;s program bridging the business school and undergraduate life —
-            spent a quarter inside the systems they were studying. Funded in part by an AIMES grant,
-            BUSGEN 116 is built around a sequence of weekly &ldquo;build-and-deploy&rdquo; exercises:
-            every assignment is live, evaluated against real-world outcomes, and consequential.
+            Thirty Stanford undergraduates — enrolled through Pathfinder, the program that opens
+            GSB courses to undergraduates — spent a quarter building the systems they were meant
+            to study. BUSGEN 116 runs on a weekly &ldquo;build-and-deploy&rdquo; model: every
+            assignment is live, evaluated against real-world outcomes, and consequential.
             Students don&apos;t read about AI governance — they run it.
           </p>
-          <p className="text-white/65 leading-relaxed max-w-2xl mb-10 text-sm">
+          <p className="text-white/65 leading-relaxed max-w-2xl mb-6 text-sm">
             Every student received fully provisioned access to OpenRouter API credits and Claude Code.
             By week three, they had deployed geopolitical forecasting agents scored against real
             outcomes. By week four, they had aligned proxy voters to their own political preferences
@@ -207,12 +206,22 @@ export default function Page() {
             The projects below are what they built when the quarter ended and they ran with the tools.
           </p>
 
+          {/* Credits */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-8 text-xs text-white/50">
+            <span>Taught by <span className="text-white/80 font-medium">Professor Andy Hall</span></span>
+            <span className="text-white/25">·</span>
+            <span>Tech TA &amp; site: <span className="text-white/80 font-medium">Piper Fleming</span></span>
+            <span className="text-white/25">·</span>
+            <span>TA: <span className="text-white/80 font-medium">Madeleine Mayhew</span></span>
+          </div>
+
           {/* Stats */}
           <div className="flex flex-wrap gap-10">
             {[
               { n: projects.length, label: "final projects" },
               { n: totalStudents, label: "students" },
-              { n: liveDemos, label: "live demos" },
+              { n: liveDemos, label: "live deployments" },
+              { n: 6, label: "weeks of live assignments" },
             ].map(({ n, label }) => (
               <div key={label}>
                 <div className="font-serif text-4xl font-bold">{n}</div>
@@ -247,9 +256,6 @@ export default function Page() {
         <div className="mb-8 flex items-end justify-between flex-wrap gap-4">
           <div>
             <h2 className="font-serif text-2xl font-bold text-stone-900">What they built</h2>
-            <p className="text-stone-500 text-sm mt-1">
-              Taught by Professor Andy Hall &nbsp;·&nbsp; Tech TA &amp; site: Piper Fleming &nbsp;·&nbsp; TA: Madeleine Mayhew
-            </p>
           </div>
           {/* Small cardinal accent rule */}
           <div className="h-0.5 w-24 rounded-full" style={{ backgroundColor: "#8C1515" }} />
