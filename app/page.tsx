@@ -27,9 +27,13 @@ const projects: Project[] = [
   {
     team: 4,
     members: ["Prakhar Goel"],
-    title: "Project",
+    title: "Rundown",
     description: "Description coming soon.",
-    links: [{ label: "View Project", href: "https://drive.google.com/drive/folders/1ZY10seDahz1PpnL-56Is7kiO5X3YP8t1", type: "drive" }],
+    links: [
+      { label: "Live Site", href: "https://getrundown.vercel.app/login", type: "site" },
+      { label: "Video", href: "https://drive.google.com/file/d/1SQJ_cZcmMdbv32qRzMoU-kN2Qpjq78pg/view", type: "video" },
+    ],
+    preview: "/previews/team4.jpg",
   },
   {
     team: 5,
@@ -120,7 +124,7 @@ const projects: Project[] = [
     links: [{ label: "Slides", href: "https://drive.google.com/file/d/10bQqLjPjq4V3W_3wVT0kiOhm67bPZKFS/view", type: "slides" }],
   },
   {
-    team: "Virtual",
+    team: 16,
     members: ["Bernardo Herzer"],
     title: "RegFi Compliance Checker",
     description: "Description coming soon.",
