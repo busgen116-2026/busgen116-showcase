@@ -22,7 +22,10 @@ const projects: Project[] = [
     members: ["Shang Jing Chia"],
     title: "AI Bank Run Simulator",
     description: "What happens when millions of financial decisions are delegated to AI agents that can act in milliseconds? A live simulation of an AI-powered bank run with LLM-driven agents reasoning from distinct personas — cautious retiree, aggressive trader, cash-strapped gig worker. Watch cascades unfold in real time, then click into any agent to read exactly what it was thinking.",
-    links: [{ label: "GitHub", href: "https://github.com/shangjingchia/busgen116-Agentic-Finance-Bankrun-Sandbox", type: "github" }],
+    links: [
+      { label: "Live Site", href: "https://busgen116-agentic-finance-bankrun-sandbox.streamlit.app/", type: "site" },
+      { label: "GitHub", href: "https://github.com/shangjingchia/busgen116-Agentic-Finance-Bankrun-Sandbox", type: "github" },
+    ],
     preview: "/previews/team3.jpg",
   },
   {
