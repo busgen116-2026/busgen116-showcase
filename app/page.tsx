@@ -155,7 +155,7 @@ export default function Page() {
           <div className="flex items-center gap-3">
             <span className="text-xs font-semibold tracking-widest uppercase text-white/60">Stanford University</span>
             <span className="text-white/30">·</span>
-            <span className="text-xs text-white/60">Pathfinder Program</span>
+            <a href="https://pathfinder.stanford.edu/" target="_blank" rel="noopener noreferrer" className="text-xs text-white/60 hover:text-white/90 transition-colors">Pathfinder Program</a>
             <span className="text-white/30">·</span>
             <span className="text-xs text-white/60">Spring 2026</span>
           </div>
@@ -179,7 +179,7 @@ export default function Page() {
           <div className="flex items-center gap-4 mb-6">
             <img src="/stanford-logo.png" alt="Stanford University" className="h-10 w-auto" />
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-white/40">
-              BUSGEN 116 &nbsp;·&nbsp; Student Final Projects
+              BUSGEN 116 &nbsp;·&nbsp; <a href="https://pathfinder.stanford.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors">Pathfinder Program</a> &nbsp;·&nbsp; Student Final Projects
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export default function Page() {
           </p>
 
           <p className="text-white/65 leading-relaxed max-w-2xl mb-4 text-sm">
-            Thirty Stanford undergraduates — enrolled through Pathfinder, the program that opens
+            Thirty Stanford undergraduates — enrolled through <a href="https://pathfinder.stanford.edu/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline underline-offset-2 hover:text-white transition-colors">Pathfinder</a>, the program that opens
             GSB courses to undergraduates — spent a quarter building the systems they were meant
             to study. BUSGEN 116 runs on a weekly &ldquo;build-and-deploy&rdquo; model: every
             assignment is live, evaluated against real-world outcomes, and consequential.
@@ -274,7 +274,7 @@ export default function Page() {
           <div className="flex items-center gap-3">
             <img src="/stanford-logo.png" alt="Stanford University" className="h-6 w-auto" />
             <span className="text-xs text-stone-400">
-              BUSGEN 116: FREE SYSTEMS &nbsp;·&nbsp; Stanford Pathfinder &nbsp;·&nbsp; Spring 2026
+              BUSGEN 116: FREE SYSTEMS &nbsp;·&nbsp; <a href="https://pathfinder.stanford.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-600 transition-colors">Stanford Pathfinder</a> &nbsp;·&nbsp; Spring 2026
             </span>
           </div>
           <span className="text-xs text-stone-400">
