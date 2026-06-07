@@ -7,6 +7,7 @@ const projects: Project[] = [
     title: "LLM Imposter: The Council of Five",
     description: "A social deduction game reimagined with large language models — can a single misaligned AI convince a council of aligned agents to adopt a selfish policy using ethical-sounding language? A proxy for alignment robustness in multi-agent governance.",
     links: [{ label: "Slides", href: "https://drive.google.com/file/d/1p8j9Eyz1lryXvuwZJMARmPf1lkADR9Ys/view", type: "slides" }],
+    preview: "/previews/team1.jpg",
   },
   {
     team: 2,
@@ -28,7 +29,7 @@ const projects: Project[] = [
     team: 4,
     members: ["Prakhar Goel"],
     title: "Rundown",
-    description: "Description coming soon.",
+    description: "Your team's week, in under a minute. Rundown connects to your Slack workspace and uses AI to distill a week of channel activity — decisions, discussions, key updates — into a concise digest, so you stay in the loop without living in Slack.",
     links: [
       { label: "Live Site", href: "https://getrundown.vercel.app/login", type: "site" },
       { label: "Video", href: "https://drive.google.com/file/d/1SQJ_cZcmMdbv32qRzMoU-kN2Qpjq78pg/view", type: "video" },
@@ -41,6 +42,7 @@ const projects: Project[] = [
     title: "Headline Truth",
     description: "Description coming soon.",
     links: [{ label: "Slides", href: "https://docs.google.com/presentation/d/1i2Dt5Gai0YwO0BAd8KYWlqwjrHVJb3AppsC8VIPsytk/edit", type: "slides" }],
+    preview: "/previews/team5.jpg",
   },
   {
     team: 6,
@@ -108,6 +110,7 @@ const projects: Project[] = [
       { label: "Slides", href: "https://drive.google.com/file/d/19lJcfiijUDt5K99cLy-kXPbKDMIAWvRx/view", type: "slides" },
       { label: "Paper", href: "https://drive.google.com/file/d/1qM_HSr-Cgn-qSnkHp6E-F2UOcux8r8xx/view", type: "pdf" },
     ],
+    preview: "/previews/team12.jpg",
   },
   {
     team: 14,
@@ -115,6 +118,7 @@ const projects: Project[] = [
     title: "ResumeScope",
     description: "A resume review platform where AI recruiter agents simulate how real recruiters read — predicting where they'll look, what they'll notice, and how they'll rate a candidate.",
     links: [{ label: "Paper", href: "https://drive.google.com/file/d/1dBqVMvDY2PKWtR-F4Od1zAEhPs0eoHlS/view", type: "pdf" }],
+    preview: "/previews/team14.jpg",
   },
   {
     team: 15,
@@ -122,6 +126,7 @@ const projects: Project[] = [
     title: "News Framing Dashboard",
     description: "Feed the same article to five AI models and measure exactly how Claude, GPT, Gemini, Grok, and Llama frame it differently — quantifying actor salience, affective loading, context inclusion, and hedge density.",
     links: [{ label: "Slides", href: "https://drive.google.com/file/d/10bQqLjPjq4V3W_3wVT0kiOhm67bPZKFS/view", type: "slides" }],
+    preview: "/previews/team15.jpg",
   },
   {
     team: 16,
