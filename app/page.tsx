@@ -188,15 +188,19 @@ export default function Page() {
           </p>
 
           <p className="text-white/65 leading-relaxed max-w-2xl mb-4 text-sm">
-            AI is remaking how societies inform themselves, make decisions, and govern. This course dives
-            in hands-on: we&apos;ll build AI agents, stress-test them for political bias, run governance simulations,
-            trade on prediction markets, and study what crypto&apos;s wild experiments in decentralized
-            rule-making got right and wrong. The goal is to understand our increasingly algorithmic world
-            and to prototype the institutions that will keep it free.
+            AI is remaking how societies inform themselves, make decisions, and govern. This course dove
+            in hands-on. We built AI agents to forecast geopolitical events, trained agents to vote based
+            on our personal values, put them into an agentic legislature, and designed our own evals to
+            score AI models against our personal criteria. The goal was to understand our increasingly
+            algorithmic world and prototype the institutions that will keep it free. Each student received
+            a Claude Code subscription and a funded OpenRouter key so that they could build as they went.
           </p>
           <p className="text-white/65 leading-relaxed max-w-2xl mb-6 text-sm">
-            Each student will be given a Claude Code subscription and a funded API key for the duration of
-            the class.
+            The final projects span the full range of what&apos;s at stake: tools mapping capital flows
+            in the AI stack, simulators watching bank runs cascade in real time, apps exposing hidden
+            framing in political communication, games testing whether a misaligned AI can manipulate a
+            council of aligned ones. Finance, governance, media, security — sometimes all at once.
+            Here&apos;s what they came up with.
           </p>
 
           {/* Credits */}
