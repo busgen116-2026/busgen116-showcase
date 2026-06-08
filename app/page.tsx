@@ -141,9 +141,6 @@ const projects: Project[] = [
   },
 ];
 
-const totalStudents = projects.reduce((n, p) => n + p.members.length, 0);
-const liveDemos = projects.filter(p => p.links.some(l => l.type === "site")).length;
-
 
 export default function Page() {
   return (
@@ -191,19 +188,15 @@ export default function Page() {
           </p>
 
           <p className="text-white/65 leading-relaxed max-w-2xl mb-4 text-sm">
-            Thirty Stanford undergraduates — enrolled through <a href="https://pathfinder.stanford.edu/" target="_blank" rel="noopener noreferrer" className="text-white/80 underline underline-offset-2 hover:text-white transition-colors">Pathfinder</a>, the program that opens
-            GSB courses to undergraduates — spent a quarter building the systems they were meant
-            to study. BUSGEN 116 runs on a weekly &ldquo;build-and-deploy&rdquo; model: every
-            assignment is live, evaluated against real-world outcomes, and consequential.
-            Students don&apos;t read about AI governance — they run it.
+            AI is remaking how societies inform themselves, make decisions, and govern. This course dives
+            in hands-on: we&apos;ll build AI agents, stress-test them for political bias, run governance simulations,
+            trade on prediction markets, and study what crypto&apos;s wild experiments in decentralized
+            rule-making got right and wrong. The goal is to understand our increasingly algorithmic world
+            and to prototype the institutions that will keep it free.
           </p>
           <p className="text-white/65 leading-relaxed max-w-2xl mb-6 text-sm">
-            Every student received fully provisioned access to OpenRouter API credits and Claude Code.
-            By week three, they had deployed geopolitical forecasting agents scored against real
-            outcomes. By week four, they had aligned proxy voters to their own political preferences
-            and sent them into a live evaluation. By week five, those agents were negotiating
-            coalitions in a shared agentic legislature. By week six, they were advising a war cabinet.
-            The projects below are what they built when the quarter ended and they ran with the tools.
+            Each student will be given a Claude Code subscription and a funded API key for the duration of
+            the class.
           </p>
 
           {/* Credits */}
@@ -215,20 +208,6 @@ export default function Page() {
             <span>TA: <span className="text-white/80 font-medium">Madeleine Mayhew</span></span>
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-wrap gap-10">
-            {[
-              { n: projects.length, label: "final projects" },
-              { n: totalStudents, label: "students" },
-              { n: liveDemos, label: "live deployments" },
-              { n: 6, label: "weeks of live assignments" },
-            ].map(({ n, label }) => (
-              <div key={label}>
-                <div className="font-serif text-4xl font-bold">{n}</div>
-                <div className="text-white/40 text-xs tracking-widest uppercase mt-1">{label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </header>
 
